@@ -18,7 +18,12 @@ void task_1() {
 void task_2() {
 	int x, y;
 	cin >> x >> y;
-	cout << "x ^ y = " << pow(x, y) << endl;
+	int some = x;
+	while (y > 1) {
+		some *= x;
+		y--;
+	}
+	cout << some << endl;
 }
 
 void task_3() {
@@ -57,6 +62,6 @@ void task_5() {
 }
 
 int main() {
-	task_5();
+	task_2();
 	return 0;
 }
